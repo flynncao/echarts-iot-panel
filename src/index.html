@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+<div>
+    <div class="h-100px y-100px">
+1123
+    </div>
+    <div id="aq" style="width: 300px;height:300px;" class="bg-red-100"></div>
+
+</div>
+
+
+<script src="
+https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js
+"></script>
+
+<script src="../options/AirQualitySensor.js" type="module"></script>
+
+
+<script type="module">
+    import aqOption from '../options/AirQualitySensor.js'
+    // AirQuality Sensor
+    var aqDOM = echarts.init(document.getElementById('aq'));
+    console.log('aqOption', aqOption)
+    aqDOM.setOption(aqOption)
+</script>
+</body>
+</html>
